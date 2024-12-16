@@ -26,7 +26,7 @@ echo "Feedback: {$feedback}\n";
 
 echo "\n Thanks ". $name ."\n"; 
 
-echo "\nThank you for participating in the survey!\n"; 
+echo "\nThank you for interactive with PHP Code!\n"; 
 ?>
 
 <?php

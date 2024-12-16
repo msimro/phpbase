@@ -28,7 +28,7 @@ function askQuestion($question) {
 } 
   
 // Main program 
-echo "Welcome to the Interactive Survey!\n"; 
+echo "Welcome to the Interactive Code!\n"; 
 echo "Please answer the following questions:\n"; 
   
 // Ask the user some questions 
@@ -46,5 +46,5 @@ echo "Location: {$location}\n";
 echo "Favorite Hobby: {$hobby}\n"; 
 echo "Feedback: {$feedback}\n"; 
 
-echo "\n Thank you for participating in the survey! \n"; 
+echo "\nThank you for interactive with PHP Code!\n"; 
 ?>

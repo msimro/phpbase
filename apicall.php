@@ -26,13 +26,23 @@
     </head>
     <body>
 		<main>
-  			<h1>Recent Images</h1>
+  			<h1>Random Genreia</h1>
 				<?php
-					$url = 'https://pixelford.com/api2/image?qty=3';
-					$images = array_slice(json_decode( file_get_contents( $url ) ), 0, 15);
-					foreach( $images as $img ) {
-						print_img( $img );
-					}
+					// $url = 'http://pixelford.com/api2/image?qty=3';
+					// $images = array_slice(json_decode( file_get_contents( $url ) ), 0, 15);
+					// foreach( $images as $img ) {
+					// 	print_img( $img );
+					// }
+						// From URL to get webpage contents.
+						$url = "http://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark/";
+						// Initialize a CURL session.
+						$ch = curl_init();
+						// Return Page contents.
+						curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+						//grab URL and pass it to the variable.
+						curl_setopt($ch, CURLOPT_URL, $url);
+						$result = curl_exec($ch);
+						var_dump($result);
 				?>
 		</main>
 		<style>
